@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(90, 84, 84);
+}
+
+.navbar {
+  background-color: rgb(90, 84, 84);
+  opacity: 0.85;
+}
+
+.nav-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item::after {
+  background-color: white;
+  content: '';
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+#div-header {
+  color: #211f1f;
+  background-color: floralwhite;
+  height: auto;
+  padding: 50px 0px;
+}
+#header-pic {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+}
+
+#about {
+  color: #211f1f;
+  padding: 30px 10px 0px 10px;
+}
+
+#skill {
+  padding: 40px 0;
+  text-align: center;
+  columns: auto 3;
+  column-fill: balance;
+}
+
+#portfolio {
+  padding: 30px 0px;
+}
+
+.card {
+  width: 25rem;
+  columns: auto 3;
+  background-color: #211f1f;
+  color: floralwhite;
+  text-align: center;
+  margin: auto;
+}
+
+#contact {
+  padding: 30px 0px;
+}
+
+/* Color scheme for fonts */
+.fa-html5 {
+  color: #e34f26;
+}
+.fa-css3-alt {
+  color: #1680c0;
+}
+.fa-js-square {
+  color: #f0db4f;
+}
+.fa-react {
+  color: #61dbfb;
+}
+.fa-bootstrap {
+  color: #080135;
+}
+.fa-node-js {
+  color: #3c873a;
+}
+.fa-python {
+  color: #4b8bbe;
+}
+.fa-github-square {
+  color: #211f1f;
+}

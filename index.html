@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Front-End Developer Portfolio of Amaluddin Asyraf"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap-social.css" />
+
+    <!-- Link CSS file and favIcon -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+
+    <title>Hello!</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/assets/img/IMG_4926.PNG"
+              alt="Logo"
+              onmouseover="navBrandOnMouseOver(this)"
+              onmouseout="navBrandOnMouseOut(this)"
+              height="60"
+              width="60"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navToggler"
+            aria-controls="navToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navToggler">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="fas fa-laptop-house"></i> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio"> Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"> Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Navbar -->
+
+    <!-- Header and Image -->
+    <div id="div-header" class="container-fluid">
+      <h1 class="text-center">Front-End Web Developer</h1>
+      <img id="header-pic" src="/assets/img/IMG_4923.PNG" alt="Header" />
+      <h2 class="text-center">And an aspiring MERN stack developer</h2>
+      <h6 class="text-center">
+        A journey of a self-taught programmer, and I'm excited looking into the
+        future!
+      </h6>
+    </div>
+
+    <!-- About Section -->
+    <div class="container" id="about">
+      <div class="row">
+        <h3 class="text-center">Hi, I'm Amaluddin!</h3>
+        <p class="text-center">
+          I'm a self taught programmer, who started my journey in programming
+          world in late 2020. Mainly focusing in JavaScript, I primarily serve
+          on Front-End Development, using technologies such as React, Bootstrap,
+          HTML and CSS. I am also pursuing on Back-End technology, mainly in
+          NodeJs, MongoDB and Express and become a competent MERN stack
+          developer. Among other area that I am interested in are the Cloud
+          Solutions, Data Science and Machine Learning. Despite having just
+          started, I am getting to become more and more passionate with the work
+          that I do and I can't wait to share my work with everyone!
+        </p>
+      </div>
+      <div class="row">
+        <h3 class="text-center">Skills and Knowledge</h3>
+        <ul class="list-unstyled" id="skill">
+          <li><i class="fab fa-html5 fa-6x mb-4"></i></li>
+          <li><i class="fab fa-css3-alt fa-6x mb-4"></i></li>
+          <li><i class="fab fa-js-square fa-6x mb-4"></i></li>
+          <li><i class="fab fa-react fa-6x mb-4"></i></li>
+          <li><i class="fab fa-bootstrap fa-6x mb-4"></i></li>
+          <li><i class="fab fa-node-js fa-6x mb-4"></i></li>
+          <li><i class="fas fa-database fa-6x mb-4"></i></li>
+          <li><i class="fab fa-python fa-6x mb-4"></i></li>
+          <li><i class="fab fa-github-square fa-6x mb-4"></i></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="container" id="portfolio">
+      <div class="row text-center mb-5">
+        <h3>Portfolio</h3>
+      </div>
+      <div class="row">
+        <div class="card">
+          <img
+            src="assets/img/forests.jpeg"
+            class="card-img-top"
+            alt="forests test"
+          />
+          <div class="card-body">
+            <h5 class="card-title">First Project</h5>
+            <p class="card-text">Some quick description of the project here</p>
+            <a href="#" class="btn btn-primary w-25">Github</a>
+            <a href="#" class="btn btn-primary w-25">Site</a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="assets/img/forests.jpeg"
+            class="card-img-top"
+            alt="forests test"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Second Project</h5>
+            <p class="card-text">Some quick description of the project here</p>
+            <a href="#" class="btn btn-primary w-25">Github</a>
+            <a href="#" class="btn btn-primary w-25">Site</a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="assets/img/forests.jpeg"
+            class="card-img-top"
+            alt="forests test"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Third Project</h5>
+            <p class="card-text">Some quick description of the project here</p>
+            <a href="#" class="btn btn-primary w-25">Github</a>
+            <a href="#" class="btn btn-primary w-25">Site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container" id="contact">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h4>Drop me an Email and Let's Talk!</h4>
+          <a
+            href="mailto:amaluddinasyraf@gmail.com"
+            class="btn btn-google btn-lg"
+            >Email Me ></a
+          >
+        </div>
+      </div>
+      <div class="row text-center">
+        <a href="#">
+          <img
+            src="/assets/img/IMG_4926.PNG"
+            alt="Logo"
+            onmouseover="navBrandOnMouseOver(this)"
+            onmouseout="navBrandOnMouseOut(this)"
+            height="100"
+            width="100"
+          />
+        </a>
+        <h6 class="mb-4">Work Hard and Play Hard!</h6>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <a
+            class="btn btn-social-icon btn-twitter"
+            href="https://twitter.com/amalasyrafs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-twitter"></span>
+          </a>
+
+          <a
+            class="btn btn-social-icon btn-instagram"
+            href="https://www.instagram.com/amalasyrafs/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-instagram"></span>
+          </a>
+          <a
+            class="btn btn-social-icon btn-linkedin"
+            href="https://www.linkedin.com/in/amalasyrafs/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-linkedin"></span>
+          </a>
+          <a
+            class="btn btn-social-icon btn-github"
+            href="https://github.com/amalasyrafs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="fab fa-github"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="text-center"><a href="#">[Back to Top]</a></div>
+        <div class="text-center">Copyright 2021</div>
+      </div>
+    </footer>
+    <!-- JS Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
