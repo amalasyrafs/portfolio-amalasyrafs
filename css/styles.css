@@ -1,19 +1,13 @@
 body {
-  background-color: rgb(90, 84, 84);
-}
-
-.navbar {
-  background-color: rgb(90, 84, 84);
-  opacity: 0.85;
+  background-color: floralwhite;
 }
 
 .nav-item {
   position: relative;
-  overflow: hidden;
 }
 
 .nav-item::after {
-  background-color: white;
+  background-color: darkblue;
   content: '';
   width: 0;
   height: 2px;
@@ -31,41 +25,126 @@ body {
   color: #211f1f;
   background-color: floralwhite;
   height: auto;
-  padding: 50px 0px;
+  padding: 4rem 2rem 4rem 2rem;
 }
 #header-pic {
   display: block;
   margin: auto;
-  max-width: 80%;
+  max-width: 70%;
 }
 
 #about {
-  color: #211f1f;
-  padding: 30px 10px 0px 10px;
+  background-color: #141c3a;
+  color: whitesmoke;
+  padding: 4rem 2rem 20rem 2rem;
+  display: block;
 }
 
 #skill {
+  background-color: floralwhite;
+  border-radius: 25px;
+  margin-top: -16rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  padding-top: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#skill-list {
   padding: 40px 0;
   text-align: center;
   columns: auto 3;
   column-fill: balance;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+#skill li {
+  position: relative;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+li:hover .fab {
+  opacity: 0.3;
+}
+li:hover .fas {
+  opacity: 0.3;
+}
+
+li:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
 }
 
 #portfolio {
-  padding: 30px 0px;
+  padding: 30px 30px;
 }
 
 .card {
   width: 25rem;
   columns: auto 3;
-  background-color: #211f1f;
-  color: floralwhite;
+  background-color: floralwhite;
+  color: gray;
   text-align: center;
   margin: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.card-body .btn {
+  background-color: #141c3a;
+}
+
+.card img {
+  position: relative;
+}
+
+.card-text {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: #141c3a;
+}
+
+.card:hover img {
+  opacity: 0.3;
+}
+
+.card:hover .card-text {
+  opacity: 1;
 }
 
 #contact {
-  padding: 30px 0px;
+  padding: 5rem 0;
+  background-color: #141c3a;
+  color: whitesmoke;
+  border-radius: 15px;
+  margin: 0 0.5rem -9rem 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+#footer {
+  background-color: grey;
+  padding: 10rem 2rem 4rem 2rem;
 }
 
 /* Color scheme for fonts */
